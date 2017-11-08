@@ -85,7 +85,7 @@ public class HackNSlashMain extends GraphicsProgram
         //draw menu
         //draw first map
         drawGraphics();
-        drawRoom(5);
+        drawRoom(0);
         //add one to current floor every time a player advances a floor
         //draw starting graphics
     }
@@ -546,7 +546,7 @@ public class HackNSlashMain extends GraphicsProgram
         
     }
 
-    /** soawnMonster() spawns random monsters behind the player based on the current floor */
+    /** spawnMonster() spawns random monsters behind the player based on the current floor */
     public void spawnMonster(int row, int col, int passedFloor){
         //check if the cell is occupied
         for(int i = 0; i < monsterList.size(); i++){
